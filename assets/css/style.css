@@ -1,0 +1,45 @@
+/* Generale*/
+body {
+  background-color: white;
+  font-family: TS-Reg, sans-serif;
+}
+
+.container {
+  width: 1300px;
+  border: 5px solid brown;
+  margin: 0 auto;
+}
+/* ------------------------- */
+/* -- HEADER --------------- */
+/* ------------------------- */
+
+header {
+  height: 100px;
+  /*border: 5px solid green;*/
+  display: flex;
+}
+
+header img {
+  width: 183px;
+  margin-top: 23px;
+  object-fit: contain;
+}
+ul {
+  display: flex;
+  justify-content: end;
+}
+ul il {
+  gap: 50px;
+}
+
+/* ------------------------- */
+/* -- MAIN --------------- */
+/* ------------------------- */
+
+h1 {
+  display: flex;
+  gap: 5px;
+}
+h1 {
+  color: #ff5e5e;
+}
