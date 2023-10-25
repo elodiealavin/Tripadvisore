@@ -168,7 +168,7 @@ a {
 }
 
 .text {
-  border: 1px solid red;
+  border: 5px solid orange;
   width: 1136px;
   gap: 112px;
 }
