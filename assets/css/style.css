@@ -9,7 +9,7 @@ body {
 .container {
   width: 1135px;
   /* border: 5px solid brown; */
-  margin: 0 auto;
+  margin: 20px auto;
 }
 /* ------------------------- */
 /* -- HEADER --------------- */
@@ -17,10 +17,11 @@ body {
 
 header {
   width: 1136px;
-  border: 5px solid green;
+  /* border: 5px solid green; */
   display: flex;
-  gap: 60px;
+  gap: 20px;
   align-items: center;
+  justify-content: space-between;
 }
 
 header img {
@@ -41,14 +42,15 @@ nav {
   /* border: red 2px solid; */
   align-items: center;
   height: inherit;
+  justify-content: center;
 }
 nav a {
   font-size: inherit;
   text-decoration: none;
   color: inherit;
-
-  text-align: center;
-  border: 1px solid #ff5e5e;
+  /* text-align: center; */
+  /* border: 1px solid #ff5e5e; */
+  padding: 0px 16px;
 }
 nav a:hover {
   color: gray;
@@ -60,25 +62,87 @@ header button {
   border-radius: 30px;
   padding: 10px;
   width: 130px;
+  /* margin-left: 60px; */
+  font-family: inherit;
 }
 
 /* ------------------------- */
 /* -- MAIN --------------- */
 /* ------------------------- */
 main {
-  border: 5px solid blueviolet;
-  padding: 40px;
-  height: 1000px;
+  padding: 20px;
+  border: 1px solid red;
+  height: 1140px;
 }
 
-h1 {
-  display: flex;
+main h1 {
   gap: 5px;
   font-size: 50px;
   font-family: TS-Bold;
 }
 
-h1 > p:nth-child(1) {
+.color {
   color: #ff5e5e;
   font-weight: bold;
+  margin-right: 10px;
+}
+.info {
+  font-size: 14px;
+  font-family: "TS-Reg";
+  color: gray;
+}
+a {
+  color: gray;
+}
+
+.menu {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.menu > div > a {
+  padding: 0px;
+}
+.menu > div {
+  height: 50px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* width: calc((100% - 50px) / 6); */
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.pictures {
+  width: 100%;
+  height: 430px;
+  /* border: 2px solid violet; */
+  display: flex;
+  gap: 2px;
+}
+.pictures img {
+  width: 100%;
+  height: 100%;
+}
+.pictures .first {
+  height: 100%;
+  /* background-color: rgb(7, 7, 75); */
+  flex: 1;
+}
+
+.pictures .second {
+  /* background-color: rgb(92, 92, 157); */
+  width: 480px;
+  height: 100%;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.pictures .second div {
+  /* border: 1px solid black; */
+  /* 100% du parent moins le 1px entre les images. Le rÃ©sultat divisÃ© par le nombre d'images */
+  height: calc((100% - 1px) / 2);
 }
