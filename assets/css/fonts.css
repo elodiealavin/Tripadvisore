@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "TS-Reg"; /* <== On donne un nom unique */
+  font-family: "TS-light"; /* <== On donne un nom unique */
   src: url("../fonts/TripSans-Regular.eot") format("embedded-opentype"),
     /* <== On donne l'emplacement du fichier de police et on précise le format pour être sûr que le navigateur ne se trompe pas en le devinant à partir de l'extension du fichier */
       url("../fonts/TripSans-Regular.woff2") format("woff2"),
@@ -11,11 +11,20 @@
 }
 
 @font-face {
-  font-family: "TS-Med";
+  font-family: "TS-Bold";
   src: url("../fonts/TripSans-Medium.eot") format("embedded-opentype"), url("../fonts/TripSans-Medium.woff2") format("woff2"),
     url("../fonts/TripSans-Medium.woff") format("woff"), url("../fonts/TripSans-Medium.ttf") format("truetype"),
     url("../fonts/TripSans-Medium.svg") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "TS-Reg";
+  src: url("../fonts/TripSans-VF.woff2") format("woff2");
+
+  /* font-weight: 500;
+  font-style: normal;
+  font-display: swap; */
 }
