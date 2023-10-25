@@ -16,10 +16,10 @@ body {
 /* ------------------------- */
 
 header {
-  height: 60px;
+  width: 1136px;
   border: 5px solid green;
   display: flex;
-  justify-content: space-between;
+  gap: 60px;
   align-items: center;
 }
 
@@ -29,25 +29,26 @@ header img {
   object-fit: contain;
 }
 input {
-  width: 170px;
-  height: 40px;
+  width: 300px;
+  height: 36px;
   border-radius: 35px;
 }
-
+.navigation {
+  display: flex;
+}
 nav {
   display: flex;
-  /* justify-content: end; */
-  gap: 100px;
-  border: red 2px solid;
+  /* border: red 2px solid; */
   align-items: center;
   height: inherit;
 }
 nav a {
-  flex: 1;
-  width: 100px;
   font-size: inherit;
   text-decoration: none;
   color: inherit;
+
+  text-align: center;
+  border: 1px solid #ff5e5e;
 }
 nav a:hover {
   color: gray;
@@ -58,7 +59,9 @@ header button {
   color: white;
   border-radius: 30px;
   padding: 10px;
+  width: 130px;
 }
+
 /* ------------------------- */
 /* -- MAIN --------------- */
 /* ------------------------- */
@@ -74,6 +77,7 @@ h1 {
   font-size: 50px;
   font-family: TS-Bold;
 }
+
 h1 > p:nth-child(1) {
   color: #ff5e5e;
   font-weight: bold;
