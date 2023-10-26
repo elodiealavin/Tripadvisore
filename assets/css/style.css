@@ -2,7 +2,6 @@
 body {
   background-color: white;
   font-family: "TS-Bold";
-
   /* font-family: TS-Reg, sans-serif; */
 }
 
@@ -65,14 +64,16 @@ header button {
   /* margin-left: 60px; */
   font-family: inherit;
 }
-
+header button:hover {
+  color: gray;
+}
 /* ------------------------- */
 /* -- MAIN --------------- */
 /* ------------------------- */
 main {
   padding: 20px;
   border: 1px solid red;
-  height: 1140px;
+  /* height: 1140px; */
 }
 
 main h1 {
@@ -146,44 +147,349 @@ a {
   /* 100% du parent moins le 1px entre les images. Le rÃ©sultat divisÃ© par le nombre d'images */
   height: calc((100% - 1px) / 2);
 }
-
+/* <-----  Decription ------> */
 .exploration {
   display: flex;
   /* height: 20px; */
-  border: 1px solid cornflowerblue;
+  justify-content: space-between;
+  /* border: 1px solid cornflowerblue; */
   gap: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
-
-.exploration span {
+.exploration div {
+  display: flex;
+  align-items: center;
+}
+.exploration a {
   font-family: "TS-Reg";
+  align-items: flex-start;
   font-size: 12px;
   color: gray;
   padding: 5px;
 }
-.exploration p {
-  border: 1px solid forestgreen;
+.exploration span {
+  /* border: 1px solid forestgreen; */
   font-size: 12px;
+  color: gray;
 }
 
-.text {
-  border: 5px solid orange;
+/* <------ Decription -------> */
+
+.description {
+  /* border: 1px solid orange; */
   width: 1136px;
-  gap: 112px;
+  /* height: 358px; */
+  display: flex;
+  justify-content: space-between;
 }
 
-.text h2 {
-  border: 2px solid violet;
+.description > div:first-child {
+  /* border: 1px solid red; */
+  width: 550px;
+  /* height: 100%; */
+  /* padding-right: 30px; */
+  /* margin-right: 50px; */
+  /* gap: 60px; */
+  /* margin-top: 10px auto; */
+}
+
+.description > div:last-child {
+  /* background-color: blue; */
+  width: 460px;
+  /* height: 356px; */
+  /* margin-top: 20px; */
+}
+
+.description .text h2 {
+  /* /* border: 5px solid #ff5e5e; */
+  /* background-color: blue; */
   font-family: inherit;
   font-size: 26px;
   margin-bottom: 20px;
-  width: 560px;
+  margin-top: 20px;
 }
 
-.text p {
-  border: 2px solid black;
+.description .text p {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  width: 560px;
+  /* background-color: aqua; */
+}
+
+aside {
+  /* background-color: #ff5e5e; */
+  height: 100%;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+aside > div:first-child {
+  background-color: #ff5e5e;
+  font-size: 25px;
+  gap: 60px;
+  border-radius: 10px 10px 0 0;
+  padding: 5%;
+}
+aside h3 {
+  margin-bottom: 15px;
+}
+
+aside p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+aside button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-size: 14px;
+  border: none;
+  padding: 15px;
+  text-decoration: none;
+}
+
+aside img {
+  /* height: 200px; */
+  width: 460px;
+  border-radius: 2;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+}
+
+/* <------ Carousel -------> */
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.suggestion {
+  /* border: 2px solid blue; */
+  /* background-color: blue; */
+  /* height: 350px; */
+  width: 330px;
+  margin-bottom: 20px;
+}
+
+.suggestion .bon-plans {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.suggestion h5 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.suggestion p {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  /* border: 2px solid yellow; */
+  width: 785px;
+  margin-bottom: 120px;
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  overflow: scroll hidden;
+  flex-wrap: nowrap;
+}
+
+/* .carousel .carousel-item {
+  background-color: aqua;
+} */
+
+.carousel .container-image {
+  /* border: 1px solid green; */
+  width: 250px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.carousel .carousel-image {
+  width: 260px;
+  height: 200px;
+}
+
+.carousel .carousel-text {
+  /* background: red; */
+  width: 270px;
+  /* background: lightgreen; */
+  font-size: 15px;
+  margin-right: 12px;
+}
+
+.carousel .carousel-location {
+  font-family: "TS-Reg";
+  /* background-color: #ff5e5ecd; */
+  font-size: 14px;
+  margin-right: 18px;
+}
+/* CAROUSEL */
+/* <------ Carousel -------> */
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.suggestion {
+  /* border: 2px solid blue; */
+  /* background-color: blue; */
+  /* height: 350px; */
+  width: 330px;
+}
+
+.suggestion h4 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.suggestion h5 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.suggestion p {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  /* border: 2px solid yellow; */
+  width: 785px;
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  overflow: scroll hidden;
+  flex-wrap: nowrap;
+}
+
+/* .carousel .carousel-item {
+  background-color: aqua;
+} */
+
+.carousel .container-image {
+  /* border: 1px solid green; */
+  width: 250px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.carousel .carousel-image {
+  width: 260px;
+  height: 200px;
+}
+
+.carousel .carousel-text {
+  /* background: red; */
+  width: 270px;
+  /* background: lightgreen; */
+  font-size: 15px;
+  margin-right: 12px;
+}
+
+.carousel .carousel-location {
+  font-family: "TS-Reg";
+  /* background-color: #ff5e5ecd; */
+  font-size: 14px;
+  margin-right: 18px;
+}
+/* CAROUSEL */
+/* <------ Carousel -------> */
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.suggestion {
+  /* border: 2px solid blue; */
+  /* background-color: blue; */
+  /* height: 350px; */
+  width: 330px;
+}
+
+.suggestion h4 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.suggestion h5 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.suggestion p {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  /* border: 2px solid yellow; */
+  width: 785px;
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  overflow: scroll hidden;
+  flex-wrap: nowrap;
+}
+
+/* .carousel .carousel-item {
+  background-color: aqua;
+} */
+
+.carousel .container-image {
+  /* border: 1px solid green; */
+  width: 250px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.carousel .carousel-image {
+  width: 260px;
+  height: 200px;
+}
+
+.carousel .carousel-text {
+  /* background: red; */
+  width: 270px;
+  /* background: lightgreen; */
+  font-size: 15px;
+  margin-right: 12px;
+}
+
+.carousel .carousel-location {
+  font-family: "TS-Reg";
+  /* background-color: #ff5e5ecd; */
+  font-size: 14px;
+  margin-right: 18px;
+}
+
+/* ------Témoignage-------- */
+.Avis {
+  border-bottom: 1px solid black;
+}
+
+.Avis p {
+  background-color: black;
+  height: 20px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  padding: 16px 64px;
 }
